@@ -1,0 +1,233 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--log-color: red;
+	--text-color: #ffffff;
+	--main-color: #f0f0f0;
+	--other-color: #ffc633;
+	--hov-color: red;
+	--second-color: #616060;
+	--btn-color: black;
+	--h1-font: 4rem;
+	--h2-font: 3.5rem;
+	--p-font: 1rem;
+	--log-font: 1.5rem;
+}
+
+.Success{
+	margin-top:10px;
+	font-size:18px;
+	color:red;
+	text-align:center
+}
+
+.error{
+	margin-top:10px;
+	font-size:18px;
+	color:red;
+	text-align:center
+}
+
+body {
+	background: #ffffff;
+	line-height: 1.6;
+	background-color: #f7f7f7;
+}
+
+.aboutUsactive{
+	transform: translateY(-2px);
+	color: var(--hov-color) !important;
+}
+
+
+/* Only body */
+.wholebody {
+	margin-top: 100px;
+}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	padding: 10px 20px;
+}
+
+.pg2 {
+	padding: 40px 0;
+}
+
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 0;
+	width: 90%;
+	margin: auto;
+}
+
+.imgh {
+	flex: 1;
+	max-width: 50%;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.imgh img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.cont {
+	flex: 1;
+	padding: 0 10px;
+	margin-left: 30px;
+}
+
+.cont h1 {
+	margin-top: 20px;
+	font-size: 1.5rem;
+	color: #333;
+}
+
+.cont p {
+	margin-bottom: 0 !important; font-size : 1rem;
+	color: #666;
+	line-height: 1.8;
+	font-size: 1rem;
+}
+
+.services {
+	text-align: center;
+	padding: 20px 0;
+	background-color: #fff;
+}
+
+.services h2 {
+	font-size: 2rem;
+	margin-bottom: 40px;
+}
+
+.services__container {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.service {
+	width: calc(33% - 20px);
+	margin-bottom: 40px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	background-color: #f9f9f9;
+	transition: transform 0.3s ease;
+}
+
+.service:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.service p {
+	font-size: 1rem;
+	color: #666;
+}
+
+.aboutus {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	padding: 30px;
+	background-color: #f6f6f6;
+	border-radius: 26px;
+}
+
+.image-container {
+	width: 50%;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-container img {
+	width: 100%;
+	object-fit: cover;
+	height: 600px;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+	width: 50%;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+.form-container h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.form-group {
+	margin-bottom: 10px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #666;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ddd;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 1rem;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.buttonABoutUs {
+	background-color: red;
+	color: #fff;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.3s ease;
+}
+
+.buttonABoutUs:hover {
+	background-color: #005353;
+}

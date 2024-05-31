@@ -1,0 +1,135 @@
+body {
+	background-image:
+		url("https://www.shutterstock.com/image-photo/black-headphones-on-dark-wooden-600nw-676210420.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: "Open Sans", sans-serif;
+	color: #333333;
+	margin: 0;
+}
+
+.error{
+	margin-top:10px;
+	font-size:18px;
+	color:red;
+	text-align:center
+}
+
+.main {
+	margin: 130px auto;
+	width: 80%;
+	background: #f9f9f9;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	box-shadow: 0 0 20px 6px #090b6f85;
+}
+
+@media ( max-width : 980px) {
+	.main {
+		flex-flow: wrap;
+		text-align: center;
+		align-content: center;
+		align-items: center;
+	}
+}
+
+.main div {
+	height: auto;
+}
+
+.leftSide {
+	color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image:
+		url("https://cdn.pixabay.com/photo/2022/06/21/21/15/audio-7276511_640.jpg");
+	overflow: hidden;
+}
+
+.main .leftSide .leftText {
+	padding: 50px;
+	width: 100%;
+	height: 100%;
+	background: #342428ad;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.leftText h1 {
+	font-size: 10vmax;
+	line-height: 1;
+	font-weight: 100;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.leftText p {
+	margin-left: 200px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-weight: 900;
+}
+
+.passforgot p{
+	float: left;
+}
+
+.main .rightSide {
+	width: 60%;
+	padding: 20px;
+	overflow: hidden;
+}
+
+@media ( max-width : 980px) {
+	.main .rightSide {
+		width: 100%;
+	}
+}
+
+.rightSide h5 {
+	font-size: 70px;
+	line-height: 0;
+}
+
+.rightSide .inputs {
+	overflow: hidden;
+}
+
+.rightSide .inputs {
+	overflow: hidden;
+}
+
+.rightText {
+	margin-top: -45px;
+}
+
+.rightSide input {
+	width: 100%;
+	padding: 5px;
+	margin-top: 25px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #B0B3B9;
+}
+
+.main .rightSide .signButton {
+	float: right;
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 35px;
+	border-radius: 50px;
+	display: inline-block;
+	border: 0;
+	outline: 0;
+	box-shadow: 0px 4px 20px 0px #49c628a6;
+	background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+}
+
+.rightSide a:hover {
+	color: red;
+}

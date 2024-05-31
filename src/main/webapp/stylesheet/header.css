@@ -1,0 +1,131 @@
+@charset "ISO-8859-1";
+
+
+/* Hover effect for the search button */
+.search-btn:hover {
+	background-color: var(--hov-color);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--log-color: red;
+	--text-color: #ffffff;
+	--main-color: #f0f0f0;
+	--other-color: #ffc633;
+	--hov-color: red;
+	--second-color: #616060;
+	--btn-color: black;
+	--h1-font: 4rem;
+	--h2-font: 3.5rem;
+	--p-font: 1rem;
+	--log-font: 1.5rem;
+}
+
+body {
+	background: #ffffff;
+	line-height: 1.6;
+	background-color: #f7f7f7;
+}
+
+/* Navbar Css */
+header {
+	display: flex !important;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000;
+	background: var(--btn-color);
+	box-shadow: 0 1px 6px 0 rgb(32 33 36/ 5%);
+	padding: 18px 7% 18px 7%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 2.1rem;
+	color: var(--log-color);
+	letter-spacing: 1.5px;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu a {
+	display: inline-block;
+	margin: 0 25px;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--text-color);
+	transition: 0.5s ease;
+}
+
+.logo:hover {
+	color: var(--hov-color);
+	text-decoration: none;
+}
+
+.menu a:hover {
+	transform: translateY(-2px);
+	color: var(--hov-color);
+}
+
+/* CSS for the search form */
+.search-form {
+	display: flex;
+	align-items: center;
+	font-family: "Poppins", sans-serif !important;
+}
+
+/* CSS for the search input */
+.search-input {
+	width: 249px;
+  padding: 6px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  margin-right: 10px !important;
+  font-size: 15px !important;
+  margin-bottom: 0px !important;
+}
+
+/* CSS for the search button */
+.search-btn {
+	padding: 7px 16px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.3s ease-in;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+}
+
+.links a {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 22px;
+	color: var(--text-color);
+	margin: 0 13px;
+	transition: 0.5s ease;
+}
+
+.links a:hover {
+	transform: translateY(-2px) scale(1.1);
+	color: var(--hov-color);
+}

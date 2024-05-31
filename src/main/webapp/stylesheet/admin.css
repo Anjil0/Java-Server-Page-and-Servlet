@@ -1,0 +1,218 @@
+@import
+	url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Source+Sans+3:ital,wght@0,700;1,700&display=swap")
+	;
+
+:root {
+	--background-color: #ffffff;
+	--text-color: #333333;
+	--primary-color: #ff6347;
+	--accent-color: #ff7f50;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: "Source Sans 3", sans-serif;
+	overflow-x: hidden;
+}
+
+nav {
+	color: #333333;
+}
+
+.navBrand {
+	text-decoration: none;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--accent-color);
+}
+
+.nav-link {
+	font-size: 1.1rem;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 700;
+	color: var(--text-color);
+}
+
+.nav-link:hover {
+	color: var(--primary-color);
+}
+
+.nav-link.active {
+	color: var(--primary-color) !important;
+}
+
+.btn {
+	font-family: "Josefin Sans", sans-serif;
+	padding: 7px 10px;
+	border-radius: 5px;
+	border: none;
+	color: var(--text-color);
+	border: 1px solid var(--primary-color);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.btn.darkbg {
+	color: var(--background-color);
+}
+
+.btn:hover {
+	background-color: var(--primary-color);
+	color: var(--background-color);
+	border: 1px solid var(--primary-color);
+}
+
+.main-container {
+	padding: 20px;
+	width: 95%;
+	margin-bottom: 70px
+}
+
+.table-container {
+	overflow: auto;
+	height: fit-content;
+	padding: 20px;
+}
+
+hr {
+	border: 1px solid var(--primary-color);
+}
+
+.orderTable {
+	background-color: #610757 !important;
+	margin-bottom: 58px;
+}
+
+.feedbackTable {
+	background-color: #4e3c4c !important;
+	margin-bottom: 58px;
+	width: 80%;
+}
+
+.statusOrder {
+	font-size: 16px;
+	color: #333;
+	background-color: #fff;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	padding: 8px;
+}
+
+.statusOrder option {
+	font-style: italic;
+}
+
+.statusOrder option[selected] {
+	font-weight: bold;
+}
+
+table {
+	width: 100%;
+	background-color: transparent !important;
+	overflow-x: auto;
+}
+
+th, td {
+	border: 1px solid var(--primary-color);
+	padding: 6px;
+	text-align: center;
+	/* 	min-width: 90px; */
+}
+
+/* image of admin */
+.small-image {
+	object-fit: contain;
+	border-radius: 5px;
+	width: 140px;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+.editBtn {
+	margin-bottom: 10px;
+}
+
+.footer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: between;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+}
+
+.footer-contacts p {
+	font-size: 1.1rem;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 700;
+}
+
+.footer-item {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.footer-item:hover {
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color) !important;
+}
+
+form {
+	display: flex;
+	align-items: center;
+}
+
+input {
+	margin: 10px;
+	padding: 10px;
+	width: 300px;
+	border-radius: 5px;
+	border: 1px solid var(--primary-color);
+}
+
+input[type="submit"] {
+	width: 100px;
+	background-color: var(--primary-color);
+	color: var(--background-color);
+	border: none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--accent-color);
+}
+
+/* Use grid to form  */
+form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+/* remove default styling for the number input  */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button
+	{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input {
+	box-shadow: none !important;
+}
